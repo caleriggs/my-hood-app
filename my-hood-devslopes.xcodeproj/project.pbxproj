@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E449C261D35F3560043126F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E449C251D35F3560043126F /* DataService.swift */; };
+		8E7A8AFA1D2F55820094E544 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A8AF91D2F55820094E544 /* PostCell.swift */; };
+		8E7A8AFD1D3498610094E544 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A8AFC1D3498610094E544 /* AddPostVC.swift */; };
 		8EE66DB41D2F4AFC005D6F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE66DB31D2F4AFC005D6F1C /* AppDelegate.swift */; };
 		8EE66DB61D2F4AFC005D6F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE66DB51D2F4AFC005D6F1C /* ViewController.swift */; };
 		8EE66DB91D2F4AFC005D6F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE66DB71D2F4AFC005D6F1C /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		8EE66DBE1D2F4AFC005D6F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE66DBC1D2F4AFC005D6F1C /* LaunchScreen.storyboard */; };
 		8EE66DC91D2F4AFC005D6F1C /* my_hood_devslopesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE66DC81D2F4AFC005D6F1C /* my_hood_devslopesTests.swift */; };
 		8EE66DD41D2F4AFC005D6F1C /* my_hood_devslopesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE66DD31D2F4AFC005D6F1C /* my_hood_devslopesUITests.swift */; };
+		8EE66DE31D2F4B68005D6F1C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE66DE21D2F4B68005D6F1C /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E449C251D35F3560043126F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8E7A8AF91D2F55820094E544 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		8E7A8AFC1D3498610094E544 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 		8EE66DB01D2F4AFC005D6F1C /* my-hood-devslopes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood-devslopes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE66DB31D2F4AFC005D6F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE66DB51D2F4AFC005D6F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		8EE66DCF1D2F4AFC005D6F1C /* my-hood-devslopesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my-hood-devslopesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE66DD31D2F4AFC005D6F1C /* my_hood_devslopesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_hood_devslopesUITests.swift; sourceTree = "<group>"; };
 		8EE66DD51D2F4AFC005D6F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE66DE21D2F4B68005D6F1C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E449C241D35F3410043126F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E449C251D35F3560043126F /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8E7A8AF61D2F55230094E544 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EE66DB71D2F4AFC005D6F1C /* Main.storyboard */,
+				8E7A8AF91D2F55820094E544 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E7A8AFB1D3498250094E544 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EE66DB51D2F4AFC005D6F1C /* ViewController.swift */,
+				8E7A8AFC1D3498610094E544 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		8EE66DA71D2F4AFC005D6F1C = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +131,11 @@
 		8EE66DB21D2F4AFC005D6F1C /* my-hood-devslopes */ = {
 			isa = PBXGroup;
 			children = (
+				8E449C241D35F3410043126F /* Services */,
+				8EE66DE11D2F4B58005D6F1C /* Model */,
+				8E7A8AF61D2F55230094E544 /* View */,
 				8EE66DB31D2F4AFC005D6F1C /* AppDelegate.swift */,
-				8EE66DB51D2F4AFC005D6F1C /* ViewController.swift */,
-				8EE66DB71D2F4AFC005D6F1C /* Main.storyboard */,
+				8E7A8AFB1D3498250094E544 /* Controller */,
 				8EE66DBA1D2F4AFC005D6F1C /* Assets.xcassets */,
 				8EE66DBC1D2F4AFC005D6F1C /* LaunchScreen.storyboard */,
 				8EE66DBF1D2F4AFC005D6F1C /* Info.plist */,
@@ -123,6 +159,14 @@
 				8EE66DD51D2F4AFC005D6F1C /* Info.plist */,
 			);
 			path = "my-hood-devslopesUITests";
+			sourceTree = "<group>";
+		};
+		8EE66DE11D2F4B58005D6F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EE66DE21D2F4B68005D6F1C /* Post.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE66DE31D2F4B68005D6F1C /* Post.swift in Sources */,
 				8EE66DB61D2F4AFC005D6F1C /* ViewController.swift in Sources */,
+				8E7A8AFD1D3498610094E544 /* AddPostVC.swift in Sources */,
+				8E449C261D35F3560043126F /* DataService.swift in Sources */,
 				8EE66DB41D2F4AFC005D6F1C /* AppDelegate.swift in Sources */,
+				8E7A8AFA1D2F55820094E544 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +535,7 @@
 				8EE66DDA1D2F4AFC005D6F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE66DDB1D2F4AFC005D6F1C /* Build configuration list for PBXNativeTarget "my-hood-devslopesTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +544,7 @@
 				8EE66DDD1D2F4AFC005D6F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE66DDE1D2F4AFC005D6F1C /* Build configuration list for PBXNativeTarget "my-hood-devslopesUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +553,7 @@
 				8EE66DE01D2F4AFC005D6F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
